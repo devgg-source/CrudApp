@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Todo List App</title>
+  </head>
+  <body>
+    <div class="app">
+      <form class="form">
+        <h1>Todo List App</h1>
+        <div class="form__row">
+          <input
+            type="text"
+            name="heading"
+            placeholder="Heading"
+            class="heading"
+          />
+        </div>
+        <div class="form__row">
+          <input
+            type="text"
+            name="description"
+            placeholder="Description"
+            class="description"
+          />
+        </div>
+        <button class="form__btn">OK</button>
+      </form>
+      <div class="todo"></div>
+      <div class="summary">
+        <p class="summary__label">Completed</p>
+        <p class="summary__value summary__value--in">0</p>
+        <p class="summary__label">Inprogress</p>
+        <p class="summary__value summary__value--out">0</p>
+        <p class="sort">
+          SORT<span><i class="fa fa-arrow-up"></i></span>
+        </p>
+      </div>
+    </div>
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <form class="modal__form">
+        <label>heading</label>
+        <input type="text" class="modal__heading" />
+        <label>Description</label>
+        <input type="text" class="modal__description" />
+        <button class="btn update">Update &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
