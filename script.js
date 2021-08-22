@@ -16,8 +16,6 @@ const completedCount = document.querySelector(".summary__value--in");
 const inprogressCount = document.querySelector(".summary__value--out");
 // const submitBtn = document.querySelector(".form__btn");
 
-//token - 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
-
 class Todo {
   date = new Date();
   year = this.date.getFullYear();
